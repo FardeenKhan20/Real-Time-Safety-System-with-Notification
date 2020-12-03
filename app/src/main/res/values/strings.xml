@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RSSSN</string>
+    <string name="title_activity_maps">Map</string>
+
+    //SharedPreferences
+
+    <string name="checkbox">com.example.rsssn.checkbox</string>
+    <string name="numberone">com.example.numberone</string>
+    <string name="numbertwo">com.example.numbertwo</string>
+</resources>

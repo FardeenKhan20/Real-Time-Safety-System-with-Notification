@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".NearbyPlaces">
+
+
+    <EditText
+        android:id="@+id/IncidentET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Write about the danger in short" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IncidentET"
+        android:layout_marginTop="20dp"
+        android:id="@+id/LatitudeET"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Provide Latitude"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LatitudeET"
+        android:id="@+id/LongitudeET"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Provide Longitude"/>
+
+    <Button
+        android:id="@+id/AddMarkerbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="219dp"
+        android:layout_marginEnd="36dp"
+        android:gravity="center"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/Mapbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AddMarkerbtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="298dp"
+        android:layout_marginEnd="35dp"
+        android:onClick="map"
+        android:text="Go To Map" />
+
+</RelativeLayout>
